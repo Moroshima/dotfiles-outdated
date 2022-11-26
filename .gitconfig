@@ -1,0 +1,14 @@
+[core]
+	editor = \"C:\\Users\\Moroshima\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
+[user]
+	name = Moroshima
+	email = 2524332942aliez@gmail.com
+	signingkey = ECE80D5BC0119408
+[http]
+	proxy = http://localhost:7890
+[https]
+	proxy = https://localhost:7890
+[gpg]
+	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
+[credential "https://qingyou-git.njupt.edu.cn"]
+	provider = generic
