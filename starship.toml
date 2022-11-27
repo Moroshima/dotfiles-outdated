@@ -63,6 +63,9 @@ symbol = "Lua "
 [nodejs]
 symbol = "Node "
 
+[package]
+symbol = "Package Version "
+
 [perl]
 symbol = "Perl "
 
