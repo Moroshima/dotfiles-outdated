@@ -12,6 +12,9 @@ connShowProcess: true
 showTrayProxyDelayIndicator: true
 bypassText: |
   bypass:
+    - www.bilibili.com
+    - byr.pt
+    - tracker.byr.pt
     - localhost
     - 127.*
     - 10.*
@@ -33,6 +36,3 @@ bypassText: |
     - 172.31.*
     - 192.168.*
     - <local>
-    - www.bilibili.com
-    - byr.pt
-    - tracker.byr.pt
