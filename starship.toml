@@ -19,11 +19,11 @@ disabled = true
 
 # 电池电量显示配置
 [battery]
-full_symbol = "[Fully Charged](bold blue) "
-charging_symbol = "[Charging](bold blue) "
-discharging_symbol = "[Battery](bold blue) "
-unknown_symbol = "[Battery](bold blue) "
-empty_symbol = "[Battery](bold blue) "
+full_symbol = "Battery "
+charging_symbol = "Charging "
+discharging_symbol = "Battery "
+unknown_symbol = "Battery "
+empty_symbol = "Battery "
 display = [
   { style = "red bold", threshold = 10 },
   { style = "yellow bold", threshold = 50 },
