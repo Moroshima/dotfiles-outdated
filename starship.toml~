@@ -6,7 +6,7 @@
 # 在命令之间插入空行
 add_newline = false
 
-format = """[Operating System](bold blue) $all"""
+format = """[Operation System](bold blue) $all"""
 
 # 将提示符的“❯”替换为“$”
 [character] # “character”是我们正在配置的组件
