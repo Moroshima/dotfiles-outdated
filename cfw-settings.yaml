@@ -13,6 +13,8 @@ showTrayProxyDelayIndicator: true
 bypassText: |
   bypass:
     - www.bilibili.com
+    - www.msftconnecttest.com
+    - p.njupt.edu.cn
     - byr.pt
     - tracker.byr.pt
     - localhost
