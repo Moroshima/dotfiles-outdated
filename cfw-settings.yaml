@@ -12,12 +12,12 @@ connShowProcess: true
 showTrayProxyDelayIndicator: true
 bypassText: |
   bypass:
-    - www.bilibili.com
-    - www.msftconnecttest.com
-    - p.njupt.edu.cn
+    - "*bilibili.com"
+    # - byr.pt # 在网络环境拥有国内非教育网公网 ipv6 地址的情况下建议注释该条以通过外网代理访问 byr.pt
+    - "*.byr.pt"
+    - "*njupt.edu.cn"
+    - "www.msftconnecttest.com"
     - 6.6.6.6
-    - byr.pt # 在网络环境拥有国内非教育网公网 ipv6 地址的情况下建议注释该条以通过外网代理访问 byr.pt
-    - tracker.byr.pt
     - localhost
     - 127.*
     - 10.*
