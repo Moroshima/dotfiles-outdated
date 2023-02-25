@@ -6,11 +6,11 @@
 # 在命令之间插入空行
 add_newline = false
 
-format = """[Operating System](bold blue) $all"""
+format = """[OS Name](bold bright-blue) $all"""
 
 # 将提示符的“❯”替换为“$”
-[character] # “character”是我们正在配置的组件
-success_symbol = "[\\$](bold blue)" # 设置“success_symbol” 字段为绿色加粗的“$”
+[character] # character 是我们正在配置的组件
+success_symbol = "[\\$](bold blue)" # 设置 success_symbol 字段为绿色加粗的“$”
 error_symbol = "[\\$](bold red)"
 
 # 命令提示符不换行
@@ -25,7 +25,7 @@ discharging_symbol = "[on](bold white) Battery "
 unknown_symbol = "[on](bold white) Battery "
 empty_symbol = "[on](bold white) Battery "
 display = [
-  { style = "red bold", threshold = 20 },
+  { style = "red bold", threshold = 30 },
   { style = "yellow bold", threshold = 50 },
   { style = "green bold", threshold = 100 },
 ]
@@ -34,7 +34,7 @@ display = [
 [cmd_duration]
 disabled = true
 
-# 针对不同语言的配置项，将nerd fonts或emoji图标更换为其名称描述
+# 针对不同语言的配置项，将 nerd fonts 或 emoji 图标更换为其名称描述
 [dart]
 symbol = "Dart "
 
@@ -48,8 +48,14 @@ symbol = "Branch "
 commit_hash_length = 6
 tag_symbol = "Commit "
 
+[git_status]
+deleted = '-'
+
 [golang]
 symbol = "Go "
+
+[haskell]
+symbol = "Haskell "
 
 [java]
 symbol = "Java "

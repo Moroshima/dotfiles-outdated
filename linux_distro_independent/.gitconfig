@@ -1,0 +1,11 @@
+[core]
+	editor = code
+[user]
+	name = Moroshima
+	email = moroshimaitsuki@gmail.com
+[http]
+	proxy = http://localhost:7890
+[credential]
+	helper = store
+[init]
+	defaultBranch = master

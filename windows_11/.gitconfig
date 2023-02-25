@@ -6,7 +6,5 @@
 	signingkey = ECE80D5BC0119408
 [http]
 	proxy = http://localhost:7890
-[https]
-	proxy = https://localhost:7890
 [gpg]
 	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe

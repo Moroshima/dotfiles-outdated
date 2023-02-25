@@ -13,7 +13,7 @@ showTrayProxyDelayIndicator: true
 bypassText: |
   bypass:
     - "*bilibili.com"
-    # - byr.pt # 在网络环境拥有国内非教育网公网 ipv6 地址的情况下建议注释该条以通过外网代理访问 byr.pt
+    - byr.pt # 在网络环境拥有国内非教育网公网 ipv6 地址的情况下建议注释该条以通过外网代理访问 byr.pt
     - "*.byr.pt"
     - "*njupt.edu.cn"
     - "www.msftconnecttest.com"

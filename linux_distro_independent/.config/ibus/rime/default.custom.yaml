@@ -1,0 +1,10 @@
+patch:
+  menu/page_size: 6  # 一行/列显示6个备选项
+  ascii_composer/good_old_caps_lock: true  # 将 Caps Lock 切换到英文模式，同时默认输出大写字母
+  ascii_composer/switch_key:
+    Caps_Lock: commit_code  # 将已输入的编码字符上屏并切换至英文大写输入模式
+    Control_L: noop  # 按键切换不触发任何行为
+    Control_R: noop
+    Eisu_toggle: clear  # 日文键盘的“英数转换”键，按下时清除已有编码
+    Shift_L: commit_code  # 将已输入的编码字符上屏并切换至英文输入模式 
+    Shift_R: commit_code
