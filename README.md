@@ -4,12 +4,12 @@
 
 | 文件夹                      | 独有 |
 | --------------------------- | ---- |
-| arch_linux                  | ●    |
-| fedora_linux                | ●    |
-| linux_distro_independent    | ○    |
-| shared                      | ○    |
-| windows_11                  | ●    |
-| windows_subsystem_for_linux | ●    |
+| arch_linux                  | ✅    |
+| fedora_linux                | ✅    |
+| linux_distro_independent    |      |
+| shared                      |      |
+| windows_11                  | ✅    |
+| windows_subsystem_for_linux | ✅    |
 
 ## Windows 11
 
@@ -43,11 +43,11 @@ Windows Terminal 配置
 
 禁用跨系统互操作性
 
-```
+```path
 /etc/wsl.conf
 ```
 
-```toml
+```conf
 # Set whether WSL supports interop process like launching Windows apps and adding path variables. Setting these to false will block the launch of Windows processes and block adding $PATH environment variables.
 [interop]
 enabled = false
