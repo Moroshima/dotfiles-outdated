@@ -11,6 +11,10 @@
 | windows_11                  | ✅    |
 | windows_subsystem_for_linux | ✅    |
 
+## Fedora
+
+在 fedora 上 nc 默认为 nmap-ncat 的 alias，而非其他系统中常见的将其作为 netcat 的 alias，因此可能需要为 Fedora Linux 单独修改 `.ssh/config` 中的 `ProxyCommand` 命令参数。
+
 ## Windows 11
 
 使用 winget 快速搭建生产环境
