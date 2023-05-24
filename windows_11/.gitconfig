@@ -2,9 +2,6 @@
 	editor = \"C:\\Users\\Moroshima\\AppData\\Local\\Programs\\Microsoft VS Code\\bin\\code\" --wait
 [user]
 	name = Moroshima
-	email = 2524332942aliez@gmail.com
-	signingkey = ECE80D5BC0119408
+	email = moroshimaitsuki@gmail.com
 [http]
 	proxy = http://localhost:7890
-[gpg]
-	program = C:\\Program Files (x86)\\GnuPG\\bin\\gpg.exe
