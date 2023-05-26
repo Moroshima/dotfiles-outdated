@@ -2,71 +2,58 @@
 
 此 repo 用于存储个人的 dotfiles 配置
 
-| 文件夹                      | 独有 |
-| --------------------------- | ---- |
-| arch_linux                  | ✅    |
-| linux_distro_independent    |      |
-| shared                      |      |
-| windows_11                  | ✅    |
-| windows_subsystem_for_linux | ✅    |
+| 文件夹                      | 适用系统                     | 独有 |
+| --------------------------- | ---------------------------- | ---- |
+| arch_linux                  | Arch Linux                   | ✅    |
+| linux_distro_independent    | 所有 GNU/Linux 发行版        |      |
+| windows_nt_and_linux_shared | GNU/Linux 与 Windows NT 通用 |      |
+| windows_11                  | Windows 11                   | ✅    |
+| windows_subsystem_for_linux | WSL (Debian)                 | ✅    |
 
 ```tree
-dotfiles
-│  README.md
-│
-├─arch_linux
-│  │  .bashrc
-│  │
-│  └─.local
-│      └─share
-│          └─applications
-│                  avahi-discover.desktop
-│                  bssh.desktop
-│                  bvnc.desktop
-│                  htop.desktop
-│                  lstopo.desktop
-│                  qv4l2.desktop
-│                  qvidcap.desktop
-│                  vim.desktop
-│
-├─linux_distro_independent
-│  │  .gitconfig
-│  │
-│  ├─.cabal
-│  │      config
-│  │
-│  ├─.config
-│  │  └─ibus
-│  │      └─rime
-│  │              default.custom.yaml
-│  │              ibus_rime.custom.yaml
-│  │              luna_pinyin_simp.custom.yaml
-│  │
-│  └─.ssh
-│          config
-│
-├─windows_11
-│  │  .gitconfig
-│  │
-│  ├─.config
-│  │  └─clash
-│  │          cfw-settings.yaml
-│  │
-│  ├─.ssh
-│  │      config
-│  │
-│  └─Documents
-│      └─PowerShell
-│              Microsoft.PowerShell_profile.ps1
-│
-├─windows_nt_and_linux_shared
-│  │  .npmrc
-│  │
-│  └─.config
-│          starship.toml
-│
-└─windows_subsystem_for_linux
-        .bashrc
+.
+├── arch_linux
+│   ├── .bashrc
+│   └── .local
+│       └── share
+│           └── applications
+│               ├── avahi-discover.desktop
+│               ├── bssh.desktop
+│               ├── bvnc.desktop
+│               ├── htop.desktop
+│               ├── lstopo.desktop
+│               ├── qv4l2.desktop
+│               ├── qvidcap.desktop
+│               └── vim.desktop
+├── linux_distro_independent
+│   ├── .cabal
+│   │   └── config
+│   ├── .config
+│   │   └── ibus
+│   │       └── rime
+│   │           ├── default.custom.yaml
+│   │           ├── ibus_rime.custom.yaml
+│   │           └── luna_pinyin_simp.custom.yaml
+│   ├── .gitconfig
+│   └── .ssh
+│       └── config
+├── README.md
+├── windows_11
+│   ├── .config
+│   │   └── clash
+│   │       └── cfw-settings.yaml
+│   ├── Documents
+│   │   └── PowerShell
+│   │       └── Microsoft.PowerShell_profile.ps1
+│   ├── .gitconfig
+│   └── .ssh
+│       └── config
+├── windows_nt_and_linux_shared
+│   ├── .config
+│   │   └── starship.toml
+│   └── .npmrc
+└── windows_subsystem_for_linux
+    └── .bashrc
 ```
 
 ## Fedora
