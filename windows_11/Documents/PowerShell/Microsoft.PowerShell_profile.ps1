@@ -6,7 +6,8 @@ Set-Alias open explorer.exe
 Set-Alias touch New-Item
 
 # Set proxy shell function
-# WARN Changes to environment variables here are persistent (https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3#saving-changes-to-environment-variables)
+#### WARN ####
+# Changes to environment variables here are persistent (https://learn.microsoft.com/zh-cn/powershell/module/microsoft.powershell.core/about/about_environment_variables?view=powershell-7.3#saving-changes-to-environment-variables)
 function Clear-Proxy
 {
   [Environment]::SetEnvironmentVariable('http_proxy', $null, 'User')
