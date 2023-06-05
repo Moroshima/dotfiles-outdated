@@ -104,14 +104,17 @@ Windows Terminal 配置
 
 ```json
 {
-  "initialCols": 110,
-  "profiles": {
-    "defaults": {
-      "cursorShape": "filledBox",
-      "opacity": 70,
-      "useAcrylic": true
-    }
-  }
+    "initialCols": 110,
+    "profiles": 
+    {
+        "defaults": 
+        {
+            "cursorShape": "filledBox",
+            "opacity": 95,
+            "useAcrylic": true
+        },
+    },
+    "useAcrylicInTabRow": true
 }
 ```
 
