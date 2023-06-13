@@ -70,7 +70,7 @@
 vim fix-keychron-k1-fn.sh
 ```
 
-```
+```shell
 #!/usr/bin/env bash
 
 FNMODE=2
@@ -136,3 +136,11 @@ appendWindowsPath = false
 ```
 
 详见 [WSL 中的高级设置配置 | Microsoft Learn](https://learn.microsoft.com/zh-cn/windows/wsl/wsl-config)
+
+## Visual Studio Code
+
+### 字体配置
+
+Linux `'Fira Code', 'Noto Sans CJK SC', monospace`
+
+Windows `Consolas, '思源黑体', monospace`
