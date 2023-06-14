@@ -144,3 +144,11 @@ appendWindowsPath = false
 Linux `'Fira Code', 'Noto Sans CJK SC', monospace`
 
 Windows `Consolas, '思源黑体', monospace`
+
+## Firefox
+
+不使用代理
+
+```
+*njupt.edu.cn
+```
