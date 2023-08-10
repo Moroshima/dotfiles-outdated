@@ -11,11 +11,10 @@ PS1='[\u@\h \W]\$ '
 
 export EDITOR='vim'
 
-export GTK_IM_MODULE=ibus
-export XMODIFIERS=@im=ibus
-export QT_IM_MODULE=ibus
-
-eval "$(starship init bash)"
+export {HTTP_PROXY,http_proxy}='http://localhost:7890'
+export {HTTPS_PROXY,https_proxy}='http://localhost:7890'
+export {FTP_PROXY,ftp_proxy}='http://localhost:7890'
+export {ALL_PROXY,all_proxy}='socks://localhost:7891'
 
 proxy() {
     if [[ $* == 'enable' ]]; then
@@ -45,10 +44,10 @@ proxy() {
             echo "HTTPS_PROXY=${HTTPS_PROXY:-'none'}"
             echo "FTP_PROXY=${FTP_PROXY:-'none'}"
             echo "ALL_PROXY=${ALL_PROXY:-'none'}"
-	    echo "http_proxy=${http_proxy:-'none'}"
-	    echo "https_proxy=${https_proxy:-'none'}"
-	    echo "ftp_proxy=${ftp_proxy:-'none'}"
-	    echo "all_proxy=${all_proxy:-'none'}"
+            echo "http_proxy=${http_proxy:-'none'}"
+            echo "https_proxy=${https_proxy:-'none'}"
+            echo "ftp_proxy=${ftp_proxy:-'none'}"
+            echo "all_proxy=${all_proxy:-'none'}"
         else
             echo 'proxy is disabled!'
         fi
@@ -57,14 +56,3 @@ proxy() {
 
 export AUR_USERNAME='Moroshima'
 export AUR_PASSWORD=''
-
-[ -z "$NVM_DIR" ] && export NVM_DIR="$HOME/.nvm"
-source /usr/share/nvm/nvm.sh
-source /usr/share/nvm/bash_completion
-source /usr/share/nvm/install-nvm-exec
-
-eval "$(rbenv init -)"
-
-. "$HOME/.cargo/env"
-
-[ -f "/home/moroshima/.ghcup/env" ] && source "/home/moroshima/.ghcup/env" # ghcup-env
