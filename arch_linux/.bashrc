@@ -9,44 +9,41 @@ alias ls='ls --color=auto'
 alias grep='grep --color=auto'
 PS1='[\u@\h \W]\$ '
 
-export EDITOR='vim'
+PROXY_HOST='localhost'
+PROXY_PORT=7890
+PROXY_SOCKS_PORT=7891
 
-export {HTTP_PROXY,http_proxy}='http://localhost:7890'
-export {HTTPS_PROXY,https_proxy}='http://localhost:7890'
-export {FTP_PROXY,ftp_proxy}='http://localhost:7890'
-export {ALL_PROXY,all_proxy}='socks://localhost:7891'
+export {HTTP_PROXY,http_proxy}="$PROXY_HOST:$PROXY_PORT"
+export {HTTPS_PROXY,https_proxy}="$PROXY_HOST:$PROXY_PORT"
+export {ALL_PROXY,all_proxy}="$PROXY_HOST:$PROXY_SOCKS_PORT"
 
 proxy() {
     if [[ $* == 'enable' ]]; then
-        if [[ $HTTP_PROXY && $HTTPS_PROXY && $FTP_PROXY && $ALL_PROXY && $all_proxy && $ftp_proxy && $http_proxy && $https_proxy ]]; then
+        if [[ $HTTP_PROXY && $HTTPS_PROXY && $ALL_PROXY && $http_proxy && $https_proxy && $all_proxy ]]; then
             echo 'proxy already enabled!'
         else
-            export {HTTP_PROXY,http_proxy}='http://localhost:7890'
-            export {HTTPS_PROXY,https_proxy}='http://localhost:7890'
-            export {FTP_PROXY,ftp_proxy}='http://localhost:7890'
-            export {ALL_PROXY,all_proxy}='socks://localhost:7891'
+            export {HTTP_PROXY,http_proxy}="$PROXY_HOST:$PROXY_PORT"
+            export {HTTPS_PROXY,https_proxy}="$PROXY_HOST:$PROXY_PORT"
+            export {ALL_PROXY,all_proxy}="$PROXY_HOST:$PROXY_SOCKS_PORT"
             echo 'proxy enabled!'
         fi
 
     elif [[ $* == 'disable' ]]; then
-        if [[ $HTTP_PROXY || $HTTPS_PROXY || $FTP_PROXY || $ALL_PRXOY || $http_proxy || $https_proxy || $ftp_proxy || $all_proxy ]]; then
+        if [[ $HTTP_PROXY || $HTTPS_PROXY || $ALL_PRXOY || $http_proxy || $https_proxy || $all_proxy ]]; then
             unset {HTTP_PROXY,http_proxy}
             unset {HTTPS_PROXY,https_proxy}
-            unset {FTP_PROXY,ftp_proxy}
             unset {ALL_PROXY,all_proxy}
             echo 'proxy disabled!'
         else
             echo 'proxy already disabled!'
         fi
     else
-        if [[ $all_proxy || $ftp_proxy || $http_proxy || $https_proxy ]]; then
+        if [[ $HTTP_PROXY || $HTTPS_PROXY || $ALL_PROXY || $http_proxy || $https_proxy || $all_proxy ]]; then
             echo "HTTP_PROXY=${HTTP_PROXY:-'none'}"
             echo "HTTPS_PROXY=${HTTPS_PROXY:-'none'}"
-            echo "FTP_PROXY=${FTP_PROXY:-'none'}"
             echo "ALL_PROXY=${ALL_PROXY:-'none'}"
             echo "http_proxy=${http_proxy:-'none'}"
             echo "https_proxy=${https_proxy:-'none'}"
-            echo "ftp_proxy=${ftp_proxy:-'none'}"
             echo "all_proxy=${all_proxy:-'none'}"
         else
             echo 'proxy is disabled!'
